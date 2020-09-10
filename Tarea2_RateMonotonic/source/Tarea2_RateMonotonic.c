@@ -84,6 +84,7 @@ typedef struct
   uint64_t local_tick;
   rtosTaskState_t state;
   priority_t priority;
+  uint8_t ID;
 } task_t;
 
 struct
@@ -117,17 +118,17 @@ void rtosKernel(rtosContextSwitchFrom_t from);
 void sortTaskPriority(task_t* tasks, uint8_t ntasks)
 {
   task_t task_pivot;
-  uint8_t j;
+  int8_t j;
   for(uint8_t i = 1; i <= ntasks; i++)
   {
-    task_pivot = task_list.tasks[i];
+    task_pivot = tasks[i];
     j = i-1;
-    while(j >= 0 && task_list.tasks[j].priority > task_pivot.priority)
+    while(j >= 0 && tasks[j].priority > task_pivot.priority)
     {
-      task_list.tasks[j+1] = task_list.tasks[j];
+      tasks[j+1] = tasks[j];
       j--;
     }
-    task_list.tasks[j+1] = task_pivot;
+    tasks[j+1] = task_pivot;
   }
 }
 
@@ -157,6 +158,7 @@ int main(void)
   GPIO_PinInit(BOARD_LED_BLUE_GPIO, BOARD_LED_BLUE_PIN, &led_config);
 
   task_list.tasks[0].task_body = task0;
+  task_list.tasks[0].ID = 0;
   task_list.tasks[0].priority = priority_0;
   task_list.tasks[0].sp = &(task_list.tasks[0].stack[RTOS_STACK_SIZE - 1])
     - STACK_FRAME_SIZE;
@@ -168,6 +170,7 @@ int main(void)
   task_list.nTask++;
 
   task_list.tasks[1].task_body = task1;
+  task_list.tasks[1].ID = 1;
   task_list.tasks[1].priority = priority_2;
   task_list.tasks[1].sp = &(task_list.tasks[1].stack[RTOS_STACK_SIZE - 1])
     - STACK_FRAME_SIZE;
@@ -179,6 +182,8 @@ int main(void)
   task_list.nTask++;
 
   task_list.tasks[2].task_body = task2;
+  task_list.tasks[2].ID = 2;
+
   task_list.tasks[2].priority = priority_1;
   task_list.tasks[2].sp = &(task_list.tasks[2].stack[RTOS_STACK_SIZE - 1])
     - STACK_FRAME_SIZE;
@@ -191,6 +196,8 @@ int main(void)
 
   /* idle task*/
   task_list.tasks[task_list.nTask].task_body = taskIdel;
+  task_list.tasks[task_list.nTask].ID = task_list.nTask;
+
   task_list.tasks[task_list.nTask].priority = priority_4;
   task_list.tasks[task_list.nTask].sp =
     &(task_list.tasks[task_list.nTask].stack[RTOS_STACK_SIZE - 1])
@@ -201,19 +208,19 @@ int main(void)
     (STACK_PSR_DEFAULT);
   task_list.tasks[task_list.nTask].state = stateReady;
 
-
-  for(uint8_t i =0; i<=task_list.nTask;i++)
+  /*for(uint8_t i = 0; i<=task_list.nTask;i++)
   {
-    PRINTF("prioridad: %d\n\r", task_list.tasks[i].priority);
+    PRINTF("\ntarea %d\n",task_list.tasks[i].ID);
   }
 
   sortTaskPriority(task_list.tasks, task_list.nTask);
 
-  for(uint8_t i =0; i<=task_list.nTask;i++)
-  {
-    PRINTF("prioridad: %d\n\r", task_list.tasks[i].priority);
-  }
 
+    for(uint8_t i = 0; i<=task_list.nTask;i++)
+    {
+      PRINTF("\ntarea %d\n",task_list.tasks[i].ID);
+    }
+*/
   NVIC_SetPriority(PendSV_IRQn, 0xFF);
 
   PRINTF("RTOS Init\n\r");
@@ -320,7 +327,7 @@ void rtosKernel(rtosContextSwitchFrom_t from)
   uint8_t nextTask = task_list.nTask;
   uint8_t findNextTask = 0;//task_list.current_task + 1;
   uint8_t foundNextTask = 0;
-
+  priority_t current_priority = priority_0;
   static uint8_t first = 1;
   register uint32_t r0 asm("r0");
 
@@ -331,16 +338,28 @@ void rtosKernel(rtosContextSwitchFrom_t from)
   {
     if (findNextTask <= task_list.nTask)
     {
-      if (stateReady == task_list.tasks[findNextTask].state
-        || stateRunning == task_list.tasks[findNextTask].state)
+      if(current_priority == task_list.tasks[findNextTask].priority)
       {
-        nextTask = findNextTask;
+        if (stateReady == task_list.tasks[findNextTask].state
+          || stateRunning == task_list.tasks[findNextTask].state)
+        {
+          nextTask = findNextTask;
 
-        foundNextTask = 1;
-      }
-      else if (findNextTask == task_list.current_task)
-      {
-        foundNextTask = 1;
+          foundNextTask = 1;
+        }
+        else if (findNextTask == task_list.current_task)
+        {
+          foundNextTask = 1;
+        }
+        else
+        {
+          findNextTask++;
+          current_priority++;
+          if(current_priority > task_list.tasks[task_list.nTask].priority)
+          {
+            current_priority = priority_0;
+          }
+        }
       }
       else
       {
@@ -350,6 +369,7 @@ void rtosKernel(rtosContextSwitchFrom_t from)
     else
     {
       findNextTask = 0;
+
     }
   } while (!foundNextTask);
 
