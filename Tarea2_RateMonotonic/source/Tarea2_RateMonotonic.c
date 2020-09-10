@@ -370,6 +370,7 @@ void rtosKernel(rtosContextSwitchFrom_t from)
     {
       findNextTask = 0;
       current_priority++;
+      PRINTF("No se encontro prioridad %d\n\r", current_priority);
       if(current_priority > priority_4)
       {
 	      current_priority = priority_0;
