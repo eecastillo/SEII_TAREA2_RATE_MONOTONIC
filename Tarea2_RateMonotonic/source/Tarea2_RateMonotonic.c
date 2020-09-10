@@ -364,6 +364,14 @@ void rtosKernel(rtosContextSwitchFrom_t from)
       else
       {
         findNextTask++;
+        if (findNextTask > task_list.nTask)
+        {
+        	current_priority++;
+        	if(current_priority > task_list.tasks[task_list.nTask].priority)
+			{
+				current_priority = priority_0;
+			}
+        }
       }
     }
     else
