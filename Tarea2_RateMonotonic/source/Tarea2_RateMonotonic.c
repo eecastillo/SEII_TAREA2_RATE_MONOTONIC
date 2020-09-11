@@ -334,7 +334,34 @@ void rtosKernel(rtosContextSwitchFrom_t from)
   (void) r0;
 
   /* calendarizador */
-  do
+  for(findNextTask = 0; foundNextTask == 0; findNextTask++)
+  {
+    if(findNextTask > task_list.nTask)
+    {
+      findNextTask = 0;
+      current_priority++;
+    }
+    if(current_priority >  task_list.tasks[task_list.nTask].priority)
+    {
+      current_priority = priority_0;
+    }
+    if(current_priority == task_list.tasks[findNextTask].priority)
+    {
+      if (stateReady == task_list.tasks[findNextTask].state
+        || stateRunning == task_list.tasks[findNextTask].state)
+      {
+        nextTask = findNextTask;
+
+        foundNextTask = 1;
+      }
+      else if (findNextTask == task_list.current_task)
+      {
+        foundNextTask = 1;
+      }
+
+    }
+  }
+  /*do
   {
     if (findNextTask <= task_list.nTask)
     {
@@ -364,19 +391,22 @@ void rtosKernel(rtosContextSwitchFrom_t from)
       else
       {
         findNextTask++;
+        if (findNextTask > task_list.nTask)
+        {
+        	current_priority++;
+        	if(current_priority > task_list.tasks[task_list.nTask].priority)
+			{
+				current_priority = priority_0;
+			}
+        }
       }
     }
     else
     {
       findNextTask = 0;
-      PRINTF("No se encontro prioridad %d\n\r", current_priority);
-      current_priority++;
-      if(current_priority > priority_4)
-      {
-	      current_priority = priority_0;
-      }
+
     }
-  } while (!foundNextTask);
+  } while (!foundNextTask);*/
 
   task_list.next_task = nextTask;
 

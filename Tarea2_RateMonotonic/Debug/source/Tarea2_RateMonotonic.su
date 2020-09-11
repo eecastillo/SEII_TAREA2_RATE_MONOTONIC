@@ -14,5 +14,5 @@ Tarea2_RateMonotonic.c:296:6:rtosReloadSysTick	16	static
 Tarea2_RateMonotonic.c:302:6:rtosDelay	16	static
 Tarea2_RateMonotonic.c:309:6:rtosActivateWaitingTask	16	static
 Tarea2_RateMonotonic.c:325:6:rtosKernel	24	static
-Tarea2_RateMonotonic.c:410:6:SysTick_Handler	8	static
-Tarea2_RateMonotonic.c:422:6:PendSV_Handler	4	static
+Tarea2_RateMonotonic.c:441:6:SysTick_Handler	8	static
+Tarea2_RateMonotonic.c:453:6:PendSV_Handler	4	static
