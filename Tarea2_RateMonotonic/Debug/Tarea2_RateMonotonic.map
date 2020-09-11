@@ -8,8 +8,6 @@ Archive member included to satisfy reference by file (symbol)
                               /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(_cr_assert.o) (__Ciob)
 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(__sys_appexit.o)
                               /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(_cr_assert.o) (__sys_appexit)
-/usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
-                              ./source/Tarea2_RateMonotonic.o (memcpy)
 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memset.o)
                               ./utilities/fsl_debug_console.o (memset)
 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(_deferredlazyseek.o)
@@ -32,6 +30,8 @@ Archive member included to satisfy reference by file (symbol)
                               /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(initio.o) (setvbuf)
 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(strlen.o)
                               ./utilities/fsl_str.o (strlen)
+/usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
+                              /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(alloc.o) (memcpy)
 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(__init_alloc.o)
                               /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(alloc.o) (__heaps)
 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(_cr_sbrk.o)
@@ -216,8 +216,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 ./source/Tarea2_RateMonotonic.o
  .data          0x0000000000000000        0x0 ./source/Tarea2_RateMonotonic.o
  .bss           0x0000000000000000        0x0 ./source/Tarea2_RateMonotonic.o
- .text.sortTaskPriority
-                0x0000000000000000       0xfe ./source/Tarea2_RateMonotonic.o
  .debug_macro   0x0000000000000000      0xae4 ./source/Tarea2_RateMonotonic.o
  .debug_macro   0x0000000000000000       0x10 ./source/Tarea2_RateMonotonic.o
  .debug_macro   0x0000000000000000      0x12e ./source/Tarea2_RateMonotonic.o
@@ -1468,13 +1466,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(__sys_appexit.o)
  .data          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(__sys_appexit.o)
  .bss           0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(__sys_appexit.o)
- .text          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
- .data          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
- .bss           0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
- .text.memcpy   0x0000000000000000        0x4 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
- .comment       0x0000000000000000       0x7a /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
- .ARM.attributes
-                0x0000000000000000       0x34 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
  .text          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memset.o)
  .data          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memset.o)
  .bss           0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memset.o)
@@ -1512,6 +1503,13 @@ Discarded input sections
  .text          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(strlen.o)
  .data          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(strlen.o)
  .bss           0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(strlen.o)
+ .text          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
+ .data          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
+ .bss           0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
+ .text.memcpy   0x0000000000000000        0x4 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
+ .comment       0x0000000000000000       0x7a /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
+ .ARM.attributes
+                0x0000000000000000       0x34 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
  .text          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(__init_alloc.o)
  .data          0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(__init_alloc.o)
  .bss           0x0000000000000000        0x0 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(__init_alloc.o)
@@ -2722,7 +2720,7 @@ END GROUP
  .data.SystemCoreClock
                 0x0000000020000008        0x4 ./device/system_MK66F18.o
                 0x0000000020000008                SystemCoreClock
- .data.first.8724
+ .data.first.8711
                 0x000000002000000c        0x1 ./source/Tarea2_RateMonotonic.o
                 0x0000000020000010                . = ALIGN (0x8)
  *fill*         0x000000002000000d        0x3 ff
@@ -2858,47 +2856,47 @@ END GROUP
                 0x00000000000046b8                _image_size = (_image_end - _image_start)
 OUTPUT(Tarea2_RateMonotonic.axf elf32-littlearm)
 
-.debug_info     0x0000000000000000     0xf944
+.debug_info     0x0000000000000000     0xf8d1
  .debug_info    0x0000000000000000      0xa96 ./utilities/fsl_debug_console.o
  .debug_info    0x0000000000000a96      0x55e ./utilities/fsl_str.o
  .debug_info    0x0000000000000ff4      0xa38 ./startup/startup_mk66f18.o
- .debug_info    0x0000000000001a2c     0x179e ./source/Tarea2_RateMonotonic.o
- .debug_info    0x00000000000031ca       0x3c ./source/semihost_hardfault.o
- .debug_info    0x0000000000003206     0x293f ./drivers/fsl_clock.o
- .debug_info    0x0000000000005b45      0x6e0 ./drivers/fsl_gpio.o
- .debug_info    0x0000000000006225     0x1fb5 ./drivers/fsl_i2c.o
- .debug_info    0x00000000000081da      0xb84 ./drivers/fsl_smc.o
- .debug_info    0x0000000000008d5e     0x1da6 ./drivers/fsl_uart.o
- .debug_info    0x000000000000ab04      0xaa4 ./device/system_MK66F18.o
- .debug_info    0x000000000000b5a8      0xb24 ./component/uart/uart_adapter.o
- .debug_info    0x000000000000c0cc      0x8e0 ./component/serial_manager/serial_manager.o
- .debug_info    0x000000000000c9ac      0x574 ./component/serial_manager/serial_port_uart.o
- .debug_info    0x000000000000cf20      0x51e ./board/board.o
- .debug_info    0x000000000000d43e     0x16c7 ./board/clock_config.o
- .debug_info    0x000000000000eb05       0x4e ./board/peripherals.o
- .debug_info    0x000000000000eb53      0xdf1 ./board/pin_mux.o
+ .debug_info    0x0000000000001a2c     0x172b ./source/Tarea2_RateMonotonic.o
+ .debug_info    0x0000000000003157       0x3c ./source/semihost_hardfault.o
+ .debug_info    0x0000000000003193     0x293f ./drivers/fsl_clock.o
+ .debug_info    0x0000000000005ad2      0x6e0 ./drivers/fsl_gpio.o
+ .debug_info    0x00000000000061b2     0x1fb5 ./drivers/fsl_i2c.o
+ .debug_info    0x0000000000008167      0xb84 ./drivers/fsl_smc.o
+ .debug_info    0x0000000000008ceb     0x1da6 ./drivers/fsl_uart.o
+ .debug_info    0x000000000000aa91      0xaa4 ./device/system_MK66F18.o
+ .debug_info    0x000000000000b535      0xb24 ./component/uart/uart_adapter.o
+ .debug_info    0x000000000000c059      0x8e0 ./component/serial_manager/serial_manager.o
+ .debug_info    0x000000000000c939      0x574 ./component/serial_manager/serial_port_uart.o
+ .debug_info    0x000000000000cead      0x51e ./board/board.o
+ .debug_info    0x000000000000d3cb     0x16c7 ./board/clock_config.o
+ .debug_info    0x000000000000ea92       0x4e ./board/peripherals.o
+ .debug_info    0x000000000000eae0      0xdf1 ./board/pin_mux.o
 
-.debug_abbrev   0x0000000000000000     0x2671
+.debug_abbrev   0x0000000000000000     0x263b
  .debug_abbrev  0x0000000000000000      0x20b ./utilities/fsl_debug_console.o
  .debug_abbrev  0x000000000000020b      0x1b3 ./utilities/fsl_str.o
  .debug_abbrev  0x00000000000003be      0x17a ./startup/startup_mk66f18.o
- .debug_abbrev  0x0000000000000538      0x390 ./source/Tarea2_RateMonotonic.o
- .debug_abbrev  0x00000000000008c8       0x31 ./source/semihost_hardfault.o
- .debug_abbrev  0x00000000000008f9      0x37a ./drivers/fsl_clock.o
- .debug_abbrev  0x0000000000000c73      0x1b8 ./drivers/fsl_gpio.o
- .debug_abbrev  0x0000000000000e2b      0x3a6 ./drivers/fsl_i2c.o
- .debug_abbrev  0x00000000000011d1      0x33d ./drivers/fsl_smc.o
- .debug_abbrev  0x000000000000150e      0x358 ./drivers/fsl_uart.o
- .debug_abbrev  0x0000000000001866      0x170 ./device/system_MK66F18.o
- .debug_abbrev  0x00000000000019d6      0x1fb ./component/uart/uart_adapter.o
- .debug_abbrev  0x0000000000001bd1      0x237 ./component/serial_manager/serial_manager.o
- .debug_abbrev  0x0000000000001e08      0x160 ./component/serial_manager/serial_port_uart.o
- .debug_abbrev  0x0000000000001f68      0x135 ./board/board.o
- .debug_abbrev  0x000000000000209d      0x2df ./board/clock_config.o
- .debug_abbrev  0x000000000000237c       0x4b ./board/peripherals.o
- .debug_abbrev  0x00000000000023c7      0x2aa ./board/pin_mux.o
+ .debug_abbrev  0x0000000000000538      0x35a ./source/Tarea2_RateMonotonic.o
+ .debug_abbrev  0x0000000000000892       0x31 ./source/semihost_hardfault.o
+ .debug_abbrev  0x00000000000008c3      0x37a ./drivers/fsl_clock.o
+ .debug_abbrev  0x0000000000000c3d      0x1b8 ./drivers/fsl_gpio.o
+ .debug_abbrev  0x0000000000000df5      0x3a6 ./drivers/fsl_i2c.o
+ .debug_abbrev  0x000000000000119b      0x33d ./drivers/fsl_smc.o
+ .debug_abbrev  0x00000000000014d8      0x358 ./drivers/fsl_uart.o
+ .debug_abbrev  0x0000000000001830      0x170 ./device/system_MK66F18.o
+ .debug_abbrev  0x00000000000019a0      0x1fb ./component/uart/uart_adapter.o
+ .debug_abbrev  0x0000000000001b9b      0x237 ./component/serial_manager/serial_manager.o
+ .debug_abbrev  0x0000000000001dd2      0x160 ./component/serial_manager/serial_port_uart.o
+ .debug_abbrev  0x0000000000001f32      0x135 ./board/board.o
+ .debug_abbrev  0x0000000000002067      0x2df ./board/clock_config.o
+ .debug_abbrev  0x0000000000002346       0x4b ./board/peripherals.o
+ .debug_abbrev  0x0000000000002391      0x2aa ./board/pin_mux.o
 
-.debug_aranges  0x0000000000000000      0xe68
+.debug_aranges  0x0000000000000000      0xe60
  .debug_aranges
                 0x0000000000000000       0x88 ./utilities/fsl_debug_console.o
  .debug_aranges
@@ -2906,55 +2904,55 @@ OUTPUT(Tarea2_RateMonotonic.axf elf32-littlearm)
  .debug_aranges
                 0x00000000000000c0      0x3a0 ./startup/startup_mk66f18.o
  .debug_aranges
-                0x0000000000000460       0xa8 ./source/Tarea2_RateMonotonic.o
+                0x0000000000000460       0xa0 ./source/Tarea2_RateMonotonic.o
  .debug_aranges
-                0x0000000000000508       0x20 ./source/semihost_hardfault.o
+                0x0000000000000500       0x20 ./source/semihost_hardfault.o
  .debug_aranges
-                0x0000000000000528      0x258 ./drivers/fsl_clock.o
+                0x0000000000000520      0x258 ./drivers/fsl_clock.o
  .debug_aranges
-                0x0000000000000780       0x40 ./drivers/fsl_gpio.o
+                0x0000000000000778       0x40 ./drivers/fsl_gpio.o
  .debug_aranges
-                0x00000000000007c0      0x188 ./drivers/fsl_i2c.o
+                0x00000000000007b8      0x188 ./drivers/fsl_i2c.o
  .debug_aranges
-                0x0000000000000948       0x98 ./drivers/fsl_smc.o
+                0x0000000000000940       0x98 ./drivers/fsl_smc.o
  .debug_aranges
-                0x00000000000009e0      0x170 ./drivers/fsl_uart.o
+                0x00000000000009d8      0x170 ./drivers/fsl_uart.o
  .debug_aranges
-                0x0000000000000b50       0x30 ./device/system_MK66F18.o
+                0x0000000000000b48       0x30 ./device/system_MK66F18.o
  .debug_aranges
-                0x0000000000000b80       0x50 ./component/uart/uart_adapter.o
+                0x0000000000000b78       0x50 ./component/uart/uart_adapter.o
  .debug_aranges
-                0x0000000000000bd0       0x98 ./component/serial_manager/serial_manager.o
+                0x0000000000000bc8       0x98 ./component/serial_manager/serial_manager.o
  .debug_aranges
-                0x0000000000000c68       0x48 ./component/serial_manager/serial_port_uart.o
+                0x0000000000000c60       0x48 ./component/serial_manager/serial_port_uart.o
  .debug_aranges
-                0x0000000000000cb0       0x20 ./board/board.o
+                0x0000000000000ca8       0x20 ./board/board.o
  .debug_aranges
-                0x0000000000000cd0       0xd8 ./board/clock_config.o
+                0x0000000000000cc8       0xd8 ./board/clock_config.o
  .debug_aranges
-                0x0000000000000da8       0x28 ./board/peripherals.o
+                0x0000000000000da0       0x28 ./board/peripherals.o
  .debug_aranges
-                0x0000000000000dd0       0x98 ./board/pin_mux.o
+                0x0000000000000dc8       0x98 ./board/pin_mux.o
 
-.debug_ranges   0x0000000000000000      0xd48
+.debug_ranges   0x0000000000000000      0xd40
  .debug_ranges  0x0000000000000000       0x78 ./utilities/fsl_debug_console.o
  .debug_ranges  0x0000000000000078       0x28 ./utilities/fsl_str.o
  .debug_ranges  0x00000000000000a0      0x390 ./startup/startup_mk66f18.o
- .debug_ranges  0x0000000000000430       0x98 ./source/Tarea2_RateMonotonic.o
- .debug_ranges  0x00000000000004c8       0x10 ./source/semihost_hardfault.o
- .debug_ranges  0x00000000000004d8      0x248 ./drivers/fsl_clock.o
- .debug_ranges  0x0000000000000720       0x30 ./drivers/fsl_gpio.o
- .debug_ranges  0x0000000000000750      0x178 ./drivers/fsl_i2c.o
- .debug_ranges  0x00000000000008c8       0x88 ./drivers/fsl_smc.o
- .debug_ranges  0x0000000000000950      0x160 ./drivers/fsl_uart.o
- .debug_ranges  0x0000000000000ab0       0x20 ./device/system_MK66F18.o
- .debug_ranges  0x0000000000000ad0       0x40 ./component/uart/uart_adapter.o
- .debug_ranges  0x0000000000000b10       0x88 ./component/serial_manager/serial_manager.o
- .debug_ranges  0x0000000000000b98       0x38 ./component/serial_manager/serial_port_uart.o
- .debug_ranges  0x0000000000000bd0       0x10 ./board/board.o
- .debug_ranges  0x0000000000000be0       0xc8 ./board/clock_config.o
- .debug_ranges  0x0000000000000ca8       0x18 ./board/peripherals.o
- .debug_ranges  0x0000000000000cc0       0x88 ./board/pin_mux.o
+ .debug_ranges  0x0000000000000430       0x90 ./source/Tarea2_RateMonotonic.o
+ .debug_ranges  0x00000000000004c0       0x10 ./source/semihost_hardfault.o
+ .debug_ranges  0x00000000000004d0      0x248 ./drivers/fsl_clock.o
+ .debug_ranges  0x0000000000000718       0x30 ./drivers/fsl_gpio.o
+ .debug_ranges  0x0000000000000748      0x178 ./drivers/fsl_i2c.o
+ .debug_ranges  0x00000000000008c0       0x88 ./drivers/fsl_smc.o
+ .debug_ranges  0x0000000000000948      0x160 ./drivers/fsl_uart.o
+ .debug_ranges  0x0000000000000aa8       0x20 ./device/system_MK66F18.o
+ .debug_ranges  0x0000000000000ac8       0x40 ./component/uart/uart_adapter.o
+ .debug_ranges  0x0000000000000b08       0x88 ./component/serial_manager/serial_manager.o
+ .debug_ranges  0x0000000000000b90       0x38 ./component/serial_manager/serial_port_uart.o
+ .debug_ranges  0x0000000000000bc8       0x10 ./board/board.o
+ .debug_ranges  0x0000000000000bd8       0xc8 ./board/clock_config.o
+ .debug_ranges  0x0000000000000ca0       0x18 ./board/peripherals.o
+ .debug_ranges  0x0000000000000cb8       0x88 ./board/pin_mux.o
 
 .debug_macro    0x0000000000000000    0x1b3a9
  .debug_macro   0x0000000000000000      0x18a ./utilities/fsl_debug_console.o
@@ -3016,62 +3014,62 @@ OUTPUT(Tarea2_RateMonotonic.axf elf32-littlearm)
  .debug_macro   0x000000000001b281       0x1b ./board/peripherals.o
  .debug_macro   0x000000000001b29c      0x10d ./board/pin_mux.o
 
-.debug_line     0x0000000000000000     0x972b
+.debug_line     0x0000000000000000     0x96b1
  .debug_line    0x0000000000000000      0x7c6 ./utilities/fsl_debug_console.o
  .debug_line    0x00000000000007c6      0x9e2 ./utilities/fsl_str.o
  .debug_line    0x00000000000011a8      0xa5e ./startup/startup_mk66f18.o
- .debug_line    0x0000000000001c06      0x973 ./source/Tarea2_RateMonotonic.o
- .debug_line    0x0000000000002579       0x59 ./source/semihost_hardfault.o
- .debug_line    0x00000000000025d2     0x1801 ./drivers/fsl_clock.o
- .debug_line    0x0000000000003dd3      0x3d5 ./drivers/fsl_gpio.o
- .debug_line    0x00000000000041a8     0x13ed ./drivers/fsl_i2c.o
- .debug_line    0x0000000000005595      0x616 ./drivers/fsl_smc.o
- .debug_line    0x0000000000005bab     0x12ce ./drivers/fsl_uart.o
- .debug_line    0x0000000000006e79      0x424 ./device/system_MK66F18.o
- .debug_line    0x000000000000729d      0x4be ./component/uart/uart_adapter.o
- .debug_line    0x000000000000775b      0x77d ./component/serial_manager/serial_manager.o
- .debug_line    0x0000000000007ed8      0x525 ./component/serial_manager/serial_port_uart.o
- .debug_line    0x00000000000083fd      0x47d ./board/board.o
- .debug_line    0x000000000000887a      0x780 ./board/clock_config.o
- .debug_line    0x0000000000008ffa       0x71 ./board/peripherals.o
- .debug_line    0x000000000000906b      0x6c0 ./board/pin_mux.o
+ .debug_line    0x0000000000001c06      0x8f9 ./source/Tarea2_RateMonotonic.o
+ .debug_line    0x00000000000024ff       0x59 ./source/semihost_hardfault.o
+ .debug_line    0x0000000000002558     0x1801 ./drivers/fsl_clock.o
+ .debug_line    0x0000000000003d59      0x3d5 ./drivers/fsl_gpio.o
+ .debug_line    0x000000000000412e     0x13ed ./drivers/fsl_i2c.o
+ .debug_line    0x000000000000551b      0x616 ./drivers/fsl_smc.o
+ .debug_line    0x0000000000005b31     0x12ce ./drivers/fsl_uart.o
+ .debug_line    0x0000000000006dff      0x424 ./device/system_MK66F18.o
+ .debug_line    0x0000000000007223      0x4be ./component/uart/uart_adapter.o
+ .debug_line    0x00000000000076e1      0x77d ./component/serial_manager/serial_manager.o
+ .debug_line    0x0000000000007e5e      0x525 ./component/serial_manager/serial_port_uart.o
+ .debug_line    0x0000000000008383      0x47d ./board/board.o
+ .debug_line    0x0000000000008800      0x780 ./board/clock_config.o
+ .debug_line    0x0000000000008f80       0x71 ./board/peripherals.o
+ .debug_line    0x0000000000008ff1      0x6c0 ./board/pin_mux.o
 
-.debug_str      0x0000000000000000    0xbe9d1
+.debug_str      0x0000000000000000    0xbe9b4
  .debug_str     0x0000000000000000    0xb5734 ./utilities/fsl_debug_console.o
                                       0xb584b (size before relaxing)
  .debug_str     0x00000000000b5734      0x6c9 ./utilities/fsl_str.o
                                       0xb4a59 (size before relaxing)
  .debug_str     0x00000000000b5dfd      0x977 ./startup/startup_mk66f18.o
                                        0x38f0 (size before relaxing)
- .debug_str     0x00000000000b6774     0x2eed ./source/Tarea2_RateMonotonic.o
-                                      0xb7dae (size before relaxing)
- .debug_str     0x00000000000b9661       0x1f ./source/semihost_hardfault.o
+ .debug_str     0x00000000000b6774     0x2ed0 ./source/Tarea2_RateMonotonic.o
+                                      0xb7d8b (size before relaxing)
+ .debug_str     0x00000000000b9644       0x1f ./source/semihost_hardfault.o
                                        0x2ef8 (size before relaxing)
- .debug_str     0x00000000000b9680     0x1e1f ./drivers/fsl_clock.o
+ .debug_str     0x00000000000b9663     0x1e1f ./drivers/fsl_clock.o
                                       0xb6edf (size before relaxing)
- .debug_str     0x00000000000bb49f       0xd3 ./drivers/fsl_gpio.o
+ .debug_str     0x00000000000bb482       0xd3 ./drivers/fsl_gpio.o
                                       0xb4aff (size before relaxing)
- .debug_str     0x00000000000bb572      0xcfb ./drivers/fsl_i2c.o
+ .debug_str     0x00000000000bb555      0xcfb ./drivers/fsl_i2c.o
                                       0xb60eb (size before relaxing)
- .debug_str     0x00000000000bc26d      0x48e ./drivers/fsl_smc.o
+ .debug_str     0x00000000000bc250      0x48e ./drivers/fsl_smc.o
                                       0xb4e83 (size before relaxing)
- .debug_str     0x00000000000bc6fb      0xd55 ./drivers/fsl_uart.o
+ .debug_str     0x00000000000bc6de      0xd55 ./drivers/fsl_uart.o
                                       0xb6242 (size before relaxing)
- .debug_str     0x00000000000bd450       0xc3 ./device/system_MK66F18.o
+ .debug_str     0x00000000000bd433       0xc3 ./device/system_MK66F18.o
                                       0xb33b5 (size before relaxing)
- .debug_str     0x00000000000bd513      0x2e8 ./component/uart/uart_adapter.o
+ .debug_str     0x00000000000bd4f6      0x2e8 ./component/uart/uart_adapter.o
                                       0xb5029 (size before relaxing)
- .debug_str     0x00000000000bd7fb      0x388 ./component/serial_manager/serial_manager.o
+ .debug_str     0x00000000000bd7de      0x388 ./component/serial_manager/serial_manager.o
                                       0xb4a7c (size before relaxing)
- .debug_str     0x00000000000bdb83       0xed ./component/serial_manager/serial_port_uart.o
+ .debug_str     0x00000000000bdb66       0xed ./component/serial_manager/serial_port_uart.o
                                       0xb4a45 (size before relaxing)
- .debug_str     0x00000000000bdc70       0x37 ./board/board.o
+ .debug_str     0x00000000000bdc53       0x37 ./board/board.o
                                       0xb5aaf (size before relaxing)
- .debug_str     0x00000000000bdca7      0x6be ./board/clock_config.o
+ .debug_str     0x00000000000bdc8a      0x6be ./board/clock_config.o
                                       0xb5cc0 (size before relaxing)
- .debug_str     0x00000000000be365       0x47 ./board/peripherals.o
+ .debug_str     0x00000000000be348       0x47 ./board/peripherals.o
                                        0x2f1f (size before relaxing)
- .debug_str     0x00000000000be3ac      0x625 ./board/pin_mux.o
+ .debug_str     0x00000000000be38f      0x625 ./board/pin_mux.o
                                       0xb573b (size before relaxing)
 
 .comment        0x0000000000000000       0x79
@@ -3232,25 +3230,25 @@ OUTPUT(Tarea2_RateMonotonic.axf elf32-littlearm)
  .ARM.attributes
                 0x0000000000000a1e       0x34 /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_nohost_nf.a(__sys_write.o)
 
-.debug_frame    0x0000000000000000     0x3510
+.debug_frame    0x0000000000000000     0x34e8
  .debug_frame   0x0000000000000000      0x244 ./utilities/fsl_debug_console.o
  .debug_frame   0x0000000000000244       0xb4 ./utilities/fsl_str.o
  .debug_frame   0x00000000000002f8      0xa54 ./startup/startup_mk66f18.o
- .debug_frame   0x0000000000000d4c      0x27c ./source/Tarea2_RateMonotonic.o
- .debug_frame   0x0000000000000fc8       0x20 ./source/semihost_hardfault.o
- .debug_frame   0x0000000000000fe8      0xa38 ./drivers/fsl_clock.o
- .debug_frame   0x0000000000001a20       0xc8 ./drivers/fsl_gpio.o
- .debug_frame   0x0000000000001ae8      0x6b0 ./drivers/fsl_i2c.o
- .debug_frame   0x0000000000002198      0x24c ./drivers/fsl_smc.o
- .debug_frame   0x00000000000023e4      0x604 ./drivers/fsl_uart.o
- .debug_frame   0x00000000000029e8       0x74 ./device/system_MK66F18.o
- .debug_frame   0x0000000000002a5c      0x110 ./component/uart/uart_adapter.o
- .debug_frame   0x0000000000002b6c      0x258 ./component/serial_manager/serial_manager.o
- .debug_frame   0x0000000000002dc4       0xe8 ./component/serial_manager/serial_port_uart.o
- .debug_frame   0x0000000000002eac       0x34 ./board/board.o
- .debug_frame   0x0000000000002ee0      0x39c ./board/clock_config.o
- .debug_frame   0x000000000000327c       0x4c ./board/peripherals.o
- .debug_frame   0x00000000000032c8      0x248 ./board/pin_mux.o
+ .debug_frame   0x0000000000000d4c      0x254 ./source/Tarea2_RateMonotonic.o
+ .debug_frame   0x0000000000000fa0       0x20 ./source/semihost_hardfault.o
+ .debug_frame   0x0000000000000fc0      0xa38 ./drivers/fsl_clock.o
+ .debug_frame   0x00000000000019f8       0xc8 ./drivers/fsl_gpio.o
+ .debug_frame   0x0000000000001ac0      0x6b0 ./drivers/fsl_i2c.o
+ .debug_frame   0x0000000000002170      0x24c ./drivers/fsl_smc.o
+ .debug_frame   0x00000000000023bc      0x604 ./drivers/fsl_uart.o
+ .debug_frame   0x00000000000029c0       0x74 ./device/system_MK66F18.o
+ .debug_frame   0x0000000000002a34      0x110 ./component/uart/uart_adapter.o
+ .debug_frame   0x0000000000002b44      0x258 ./component/serial_manager/serial_manager.o
+ .debug_frame   0x0000000000002d9c       0xe8 ./component/serial_manager/serial_port_uart.o
+ .debug_frame   0x0000000000002e84       0x34 ./board/board.o
+ .debug_frame   0x0000000000002eb8      0x39c ./board/clock_config.o
+ .debug_frame   0x0000000000003254       0x4c ./board/peripherals.o
+ .debug_frame   0x00000000000032a0      0x248 ./board/pin_mux.o
 
 Cross Reference Table
 
@@ -3906,7 +3904,6 @@ mcgConfig_BOARD_BootClockHSRUN                    ./board/clock_config.o
 mcgConfig_BOARD_BootClockVLPR                     ./board/clock_config.o
 memcpy                                            /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memcpy.o)
                                                   /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(alloc.o)
-                                                  ./source/Tarea2_RateMonotonic.o
 memset                                            /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(memset.o)
                                                   /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(fclose.o)
                                                   /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(alloc.o)
@@ -3930,7 +3927,6 @@ setvbuf                                           /usr/local/mcuxpressoide-11.2.
                                                   /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(initio.o)
 simConfig_BOARD_BootClockHSRUN                    ./board/clock_config.o
 simConfig_BOARD_BootClockVLPR                     ./board/clock_config.o
-sortTaskPriority                                  ./source/Tarea2_RateMonotonic.o
 strlen                                            /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(strlen.o)
                                                   /usr/local/mcuxpressoide-11.2.0_4120/ide/plugins/com.nxp.mcuxpresso.tools.linux_11.2.0.202001021529/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libcr_c.a(remove.o)
                                                   ./utilities/fsl_str.o

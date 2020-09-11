@@ -115,22 +115,7 @@ void rtosActivateWaitingTask(void);
 
 void rtosKernel(rtosContextSwitchFrom_t from);
 
-void sortTaskPriority(task_t* tasks, uint8_t ntasks)
-{
-  task_t task_pivot;
-  int8_t j;
-  for(uint8_t i = 1; i <= ntasks; i++)
-  {
-    task_pivot = tasks[i];
-    j = i-1;
-    while(j >= 0 && tasks[j].priority > task_pivot.priority)
-    {
-      tasks[j+1] = tasks[j];
-      j--;
-    }
-    tasks[j+1] = task_pivot;
-  }
-}
+
 
 int main(void)
 {
@@ -208,19 +193,7 @@ int main(void)
     (STACK_PSR_DEFAULT);
   task_list.tasks[task_list.nTask].state = stateReady;
 
-  /*for(uint8_t i = 0; i<=task_list.nTask;i++)
-  {
-    PRINTF("\ntarea %d\n",task_list.tasks[i].ID);
-  }
 
-  sortTaskPriority(task_list.tasks, task_list.nTask);
-
-
-    for(uint8_t i = 0; i<=task_list.nTask;i++)
-    {
-      PRINTF("\ntarea %d\n",task_list.tasks[i].ID);
-    }
-*/
   NVIC_SetPriority(PendSV_IRQn, 0xFF);
 
   PRINTF("RTOS Init\n\r");
@@ -358,55 +331,9 @@ void rtosKernel(rtosContextSwitchFrom_t from)
       {
         foundNextTask = 1;
       }
-
     }
   }
-  /*do
-  {
-    if (findNextTask <= task_list.nTask)
-    {
-      if(current_priority == task_list.tasks[findNextTask].priority)
-      {
-        if (stateReady == task_list.tasks[findNextTask].state
-          || stateRunning == task_list.tasks[findNextTask].state)
-        {
-          nextTask = findNextTask;
 
-          foundNextTask = 1;
-        }
-        else if (findNextTask == task_list.current_task)
-        {
-          foundNextTask = 1;
-        }
-        else
-        {
-          findNextTask++;
-          current_priority++;
-          if(current_priority > task_list.tasks[task_list.nTask].priority)
-          {
-            current_priority = priority_0;
-          }
-        }
-      }
-      else
-      {
-        findNextTask++;
-        if (findNextTask > task_list.nTask)
-        {
-        	current_priority++;
-        	if(current_priority > task_list.tasks[task_list.nTask].priority)
-			{
-				current_priority = priority_0;
-			}
-        }
-      }
-    }
-    else
-    {
-      findNextTask = 0;
-
-    }
-  } while (!foundNextTask);*/
 
   task_list.next_task = nextTask;
 
